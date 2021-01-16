@@ -5,12 +5,12 @@ body{
 		
 	@for $i from 1 through 2{	
 		.color1:nth-child(#{$i}){
-			background-color: orange;
+			background-color: rgb(28, 24, 88);
 
 		}
 
 		.color2:nth-child(#{$i}){
-			background-color: green;
+			background-color: rgb(207, 116, 30);
 		}
 	}
 
