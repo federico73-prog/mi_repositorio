@@ -6,14 +6,15 @@ body {
   /*BOTON*/
   /*FOOTER*/ }
   body .color1:nth-child(1) {
-    background-color: orange; }
+    background-color: #1c1858; }
   body .color2:nth-child(1) {
-    background-color: green; }
+    background-color: #cf741e; }
   body .color1:nth-child(2) {
-    background-color: orange; }
+    background-color: #1c1858; }
   body .color2:nth-child(2) {
-    background-color: green; }
+    background-color: #cf741e; }
   body section {
+    margin-top: 1px;
     text-align: center;
     padding: 50px 0; }
   body .nav__navbar {
@@ -40,14 +41,11 @@ body {
   body .etiqueta__container {
     padding: 20px;
     margin-top: -90px; }
+    body .etiqueta__container .etiqueta__container__nuestrocatalogo {
+      font-family: "Do Hyeon", sans-serif;
+      margin-top: 150px; }
     body .etiqueta__container .etiqueta__h2 {
       font-family: "Do Hyeon", sans-serif; }
-    body .etiqueta__container hr {
-      border: 0;
-      height: 2px;
-      border-top: 1px dashed black;
-      border-bottom: 1px dashed black;
-      border-radius: 90%; }
   body .portfolio-container img {
     -webkit-filter: sepia(100%);
     filter: sepia(100%);

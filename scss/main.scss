@@ -56,14 +56,17 @@ body{
 
 	/*ETIQUETA NUEVOS PRODUCTOS*/
 	.etiqueta__container{
-		
+
 		padding: 20px;
 		margin-top: -90px;
+
+		.etiqueta__container__nuestrocatalogo{
+			font-family: $font-primario;
+		    margin-top: 150px;
+		}
 		.etiqueta__h2{
 			font-family: $font-primario;
 		}
-
-		hr {border: 0; height: 2px; border-top: 1px dashed rgb(0, 0, 0); border-bottom: 1px dashed rgb(0, 0, 0); border-radius: 90%;}
 	}
 	
 	/*GALERIA*/
