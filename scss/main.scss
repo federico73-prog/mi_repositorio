@@ -2,37 +2,26 @@
 @import "colores";
 
 body{
-		
-	@for $i from 1 through 2{	
-		.color1:nth-child(#{$i}){
-			background-color: rgb(28, 24, 88);
-
-		}
-
-		.color2:nth-child(#{$i}){
-			background-color: rgb(207, 116, 30);
-		}
-	}
-
-	section{
-		margin-top: 1px;
-		text-align: center;
-		padding: 50px 0;
-	}
-
+	margin: 0;
+	padding: 0;
+	background-color: rgb(204, 202, 196);
+	
 	/*NAVEGADOR*/
     .nav__navbar{
         background-color: black;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
 		min-height: 100px;
 		.navbar__imagenLogo{
-			max-width: 75px;
+			width:125px;
+			height: 100px;
+
 		}
 		.navbar__navbar-nav{
 			font-size: 20px;
 			font-family: $font-primario;
 			.nav-item .nav-link{
-				color: $color-primario;
+				color: rgb(217, 223, 215);
+				margin-left: 12px;
 			}
 		}
 		.navbar__navbar-toggler{
@@ -44,59 +33,108 @@ body{
 
 	/*CAROUSEL*/
 	.carousel__div{
-		margin-top: 60px;
-		margin-bottom: -60px;
-		transform: scale(0.8);
-		
-		.fotoCarousel__img{
-			height: 550px;
-			width: 100%;
-		}	
-	}
 
+		.carousel__div__item{
+			.fotoCarousel__img{
+				height: 750px;
+				background: no-repeat center center scroll;
+				-webkit-background-size: cover ;
+				background-size: cover;
+				}	
+			.carousel__div__caption{
+				bottom: 250px;
+				.carousel__h5__caption{
+					font-size: 100px;
+					text-transform: uppercase;
+					letter-spacing: 4px;
+					margin-top: 40px;
+					font-family: 'Amatic SC', cursive;
+				}
+				.carousel__p__caption{
+					width: 60%;
+					margin: auto;
+					margin-bottom: 35px;
+					color: rgb(197, 187, 189);
+					font-family: $font-secundario;
+					font-size: 35px;
+					-webkit-text-stroke: 0.5px black;
+				}
+				.carousel__a__caption{
+					text-transform: uppercase;
+					background: #262626;
+					padding: 10px 30px;
+					display: inline-block;
+					color: #fff;
+					margin-top: 15px;
+					font-family: $font-primario;
+				}
+				.div__iconos__corousel{
+					margin-top: 50px;
+					.a__icono__carousel{
+						.icono__carousel{
+								padding: 0px 80px 0px 80px;
+								font-size: 75px;
+						}
+					}
+				}
+			}
+		}
+	}
 	/*ETIQUETA NUEVOS PRODUCTOS*/
 	.etiqueta__container{
 
 		padding: 20px;
-		margin-top: -90px;
 
-		.etiqueta__container__nuestrocatalogo{
-			font-family: $font-primario;
+		.h2__container__nuestroCatalogo{
+			font-family: $font-secundario;
 		    margin-top: 150px;
 		}
-		.etiqueta__h2{
-			font-family: $font-primario;
+		.h2__container__productosDestacados{
+			font-family: $font-secundario;
 		}
 	}
 	
 	/*GALERIA*/
 
-
-	
-	    
-.portfolio-container img{
-	-webkit-filter: sepia(100%);
-	filter: sepia(100%);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-	height: 450px;
-	width: 400px;
-	margin: 20px;
-	margin-bottom: 40px;
-}
-
-.portfolio-container:hover img{
-	-webkit-filter: sepia(0);
-	filter: sepia(0);
-}
-
-h3{
-	font-size: 15px;
-}
+	.section__galeria{
+		background: linear-gradient(100deg,rgb(184, 5, 94) 50%,rgb(131, 127, 127) 50%);
+		margin-top: -10px;
+		text-align: center;
+		padding: 50px 0;
+	.row{
 		
+		.galeria__div{
+			
+			.portfolio-container img{
+				-webkit-filter: sepia(100%);
+				filter: sepia(100%);
+				-webkit-transition: .3s ease-in-out;
+				transition: .3s ease-in-out;
+				height: 350px;
+				width: 300px;
+				margin-bottom: 40px;
+			}
+
+			.portfolio-container:hover img{
+				-webkit-filter: sepia(0);
+				filter: sepia(0);
+			}
+			.div__portfolio-details{
+				margin-top: -30px;
+				margin-bottom: 40px;
+				.galeria__h3{
+					font-size: 15px;
+					padding-top: 5px;
+				}
+			}
+		}
+	}
+
+}
+
 	/*BOTON*/
 	.botonFinal__btn{
-		margin-top: -10px;
+		margin-top: -90px;
 		margin-bottom: 40px;
 		margin-left: 43%;
 	}
@@ -129,8 +167,124 @@ h3{
 			}
 		}
 	}
-}
+
+	/*SECCION NOSOTROS*/
+
+	#hero{
+		text-align: center;
+		padding: 50px 0;
+		margin-top: 40px;
+		margin-bottom: -40px;
+		.container__seccionNosotros{
+			border-style: inherit;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			height: 100%;
+			background-image: url(../img/equipo.PNG);
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 1%;
+			
+			.h1__seccionNosotros{
+				font-family: $font-secundario;
+				margin-top: 80px;
+				margin-bottom: 80px;
+				padding-top: 40px;
+				
+			}
+			.p__seccionNosotros{
+				font-family: $font-primario;
+				font-weight: 900;
+				color: rgb(0, 0, 0);
+				font-size: 35px;
+				margin-bottom: 80px;
+			}
+			
+		
+		}
+
+	}
 	
+	/*SECCION CONTACTO*/
+
+	.content{
+		margin: 6%;
+		padding: 4rem 1rem 4rem 1rem;
+		box-shadow: 0px 0px 10px 3px grey;
+		background: #ffffff;
+		margin-top: 18% ;
+		font-family: $font-primario;
+		font-size: 20px;
+		
+
+		.div__img__form{
+			padding-right: 20px;
+			padding-top: 60px;
+			.img-fluid{
+				height: 250px;
+			}
+		
+		}
+
+		.div__form{
+			border-style: solid;
+			border-color: green;
+		.h2__container__contacto{
+			font-family: $font-secundario;
+			margin-left: 28%;
+			padding-bottom: 50px;
+			margin-top: 20px;
+		}
+
+		.form-control{
+			display: block;
+			width: 100%;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1.5;
+			border-color: #00ac96 !important;
+			border-style: solid !important;
+			border-width: 0 0 1px 0 !important;
+			padding: 0px !important;
+			color: #495057;
+			height: auto;
+			border-radius: 0;
+			background-color: #fff;
+			background-clip: padding-box ;
+		}
+
+		.form-control:focus{
+			color: #495057;
+			background-color: white;
+			border-color: white;
+			outline: 0;
+			box-shadow: none;
+		}
+
+		.btn__formulario{
+			margin-top: 20px;
+			margin-bottom: 20px;
+			margin-left: 140px;
+			border-color: #00ac96;
+			color: #00ac96;
+			background-color: white;
+		}
+
+		.btn__formulario:hover{
+			background-color: #00ac96;
+			color:white;
+		}
+	}
+	}
+		
+		
+}
+
+
+
+
+	
+
 
 
 

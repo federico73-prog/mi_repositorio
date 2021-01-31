@@ -1,67 +1,96 @@
 body {
+  margin: 0;
+  padding: 0;
+  background-color: #cccac4;
   /*NAVEGADOR*/
   /*CAROUSEL*/
   /*ETIQUETA NUEVOS PRODUCTOS*/
   /*GALERIA*/
   /*BOTON*/
-  /*FOOTER*/ }
-  body .color1:nth-child(1) {
-    background-color: #1c1858; }
-  body .color2:nth-child(1) {
-    background-color: #cf741e; }
-  body .color1:nth-child(2) {
-    background-color: #1c1858; }
-  body .color2:nth-child(2) {
-    background-color: #cf741e; }
-  body section {
-    margin-top: 1px;
-    text-align: center;
-    padding: 50px 0; }
+  /*FOOTER*/
+  /*SECCION NOSOTROS*/
+  /*SECCION CONTACTO*/ }
   body .nav__navbar {
     background-color: black;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
     min-height: 100px; }
     body .nav__navbar .navbar__imagenLogo {
-      max-width: 75px; }
+      width: 125px;
+      height: 100px; }
     body .nav__navbar .navbar__navbar-nav {
       font-size: 20px;
-      font-family: "Do Hyeon", sans-serif; }
+      font-family: "Josefin Sans", sans-serif; }
       body .nav__navbar .navbar__navbar-nav .nav-item .nav-link {
-        color: white; }
+        color: #d9dfd7;
+        margin-left: 12px; }
     body .nav__navbar .navbar__navbar-toggler {
       color: white;
       font-size: 35px; }
-  body .carousel__div {
-    margin-top: 60px;
-    margin-bottom: -60px;
-    transform: scale(0.8); }
-    body .carousel__div .fotoCarousel__img {
-      height: 550px;
-      width: 100%; }
+  body .carousel__div .carousel__div__item .fotoCarousel__img {
+    height: 750px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover; }
+  body .carousel__div .carousel__div__item .carousel__div__caption {
+    bottom: 250px; }
+    body .carousel__div .carousel__div__item .carousel__div__caption .carousel__h5__caption {
+      font-size: 100px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-top: 40px;
+      font-family: 'Amatic SC', cursive; }
+    body .carousel__div .carousel__div__item .carousel__div__caption .carousel__p__caption {
+      width: 60%;
+      margin: auto;
+      margin-bottom: 35px;
+      color: #c5bbbd;
+      font-family: "Major Mono Display", monospace;
+      font-size: 35px;
+      -webkit-text-stroke: 0.5px black; }
+    body .carousel__div .carousel__div__item .carousel__div__caption .carousel__a__caption {
+      text-transform: uppercase;
+      background: #262626;
+      padding: 10px 30px;
+      display: inline-block;
+      color: #fff;
+      margin-top: 15px;
+      font-family: "Josefin Sans", sans-serif; }
+    body .carousel__div .carousel__div__item .carousel__div__caption .div__iconos__corousel {
+      margin-top: 50px; }
+      body .carousel__div .carousel__div__item .carousel__div__caption .div__iconos__corousel .a__icono__carousel .icono__carousel {
+        padding: 0px 80px 0px 80px;
+        font-size: 75px; }
   body .etiqueta__container {
-    padding: 20px;
-    margin-top: -90px; }
-    body .etiqueta__container .etiqueta__container__nuestrocatalogo {
-      font-family: "Do Hyeon", sans-serif;
+    padding: 20px; }
+    body .etiqueta__container .h2__container__nuestroCatalogo {
+      font-family: "Major Mono Display", monospace;
       margin-top: 150px; }
-    body .etiqueta__container .etiqueta__h2 {
-      font-family: "Do Hyeon", sans-serif; }
-  body .portfolio-container img {
-    -webkit-filter: sepia(100%);
-    filter: sepia(100%);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-    height: 450px;
-    width: 400px;
-    margin: 20px;
-    margin-bottom: 40px; }
-  body .portfolio-container:hover img {
-    -webkit-filter: sepia(0);
-    filter: sepia(0); }
-  body h3 {
-    font-size: 15px; }
-  body .botonFinal__btn {
+    body .etiqueta__container .h2__container__productosDestacados {
+      font-family: "Major Mono Display", monospace; }
+  body .section__galeria {
+    background: linear-gradient(100deg, #b8055e 50%, #837f7f 50%);
     margin-top: -10px;
+    text-align: center;
+    padding: 50px 0; }
+    body .section__galeria .row .galeria__div .portfolio-container img {
+      -webkit-filter: sepia(100%);
+      filter: sepia(100%);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      height: 350px;
+      width: 300px;
+      margin-bottom: 40px; }
+    body .section__galeria .row .galeria__div .portfolio-container:hover img {
+      -webkit-filter: sepia(0);
+      filter: sepia(0); }
+    body .section__galeria .row .galeria__div .div__portfolio-details {
+      margin-top: -30px;
+      margin-bottom: 40px; }
+      body .section__galeria .row .galeria__div .div__portfolio-details .galeria__h3 {
+        font-size: 15px;
+        padding-top: 5px; }
+  body .botonFinal__btn {
+    margin-top: -90px;
     margin-bottom: 40px;
     margin-left: 43%; }
   body .container__footer {
@@ -81,3 +110,80 @@ body {
     body .container__footer .columna3__div .informacion__ul .informacion__li {
       padding-bottom: 5px;
       padding-left: 7px; }
+  body #hero {
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 40px;
+    margin-bottom: -40px; }
+    body #hero .container__seccionNosotros {
+      border-style: inherit;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      height: 100%;
+      background-image: url(../img/equipo.PNG);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 1%; }
+      body #hero .container__seccionNosotros .h1__seccionNosotros {
+        font-family: "Major Mono Display", monospace;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding-top: 40px; }
+      body #hero .container__seccionNosotros .p__seccionNosotros {
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 900;
+        color: black;
+        font-size: 35px;
+        margin-bottom: 80px; }
+  body .content {
+    margin: 6%;
+    padding: 4rem 1rem 4rem 1rem;
+    box-shadow: 0px 0px 10px 3px grey;
+    background: #ffffff;
+    margin-top: 18%;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px; }
+    body .content .div__img__form {
+      padding-right: 20px;
+      padding-top: 60px; }
+      body .content .div__img__form .img-fluid {
+        height: 250px; }
+    body .content .div__form {
+      border-style: solid;
+      border-color: green; }
+      body .content .div__form .h2__container__contacto {
+        font-family: "Major Mono Display", monospace;
+        margin-left: 28%;
+        padding-bottom: 50px;
+        margin-top: 20px; }
+      body .content .div__form .form-control {
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        border-color: #00ac96 !important;
+        border-style: solid !important;
+        border-width: 0 0 1px 0 !important;
+        padding: 0px !important;
+        color: #495057;
+        height: auto;
+        border-radius: 0;
+        background-color: #fff;
+        background-clip: padding-box; }
+      body .content .div__form .form-control:focus {
+        color: #495057;
+        background-color: white;
+        border-color: white;
+        outline: 0;
+        box-shadow: none; }
+      body .content .div__form .btn__formulario {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 140px;
+        border-color: #00ac96;
+        color: #00ac96;
+        background-color: white; }
+      body .content .div__form .btn__formulario:hover {
+        background-color: #00ac96;
+        color: white; }
