@@ -281,3 +281,19 @@ body {
   body .p__envios {
     font-size: 20px;
     font-family: "Josefin Sans", sans-serif; }
+  body .carousel__a__envios {
+    text-transform: uppercase;
+    background: #262626;
+    padding: 10px 30px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+    font-family: "Josefin Sans", sans-serif;
+    border-color: #fcffff !important;
+    border-style: solid !important; }
+  body .carousel__a__envios:hover {
+    background-color: white;
+    color: black;
+    border-color: black !important;
+    border-style: solid !important;
+    font-style: none !important; }
