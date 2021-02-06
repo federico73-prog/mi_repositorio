@@ -1,65 +1,70 @@
 @import "tipografia";
 @import "colores";
 
-body{
-	margin: 0;
-	padding: 0;
-	background-color: rgb(204, 202, 196);
-	
-	/*NAVEGADOR*/
-    .nav__navbar{
-        background-color: black;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
-		min-height: 100px;
-		.navbar__imagenLogo{
-			width:125px;
-			height: 100px;
+body {
+	background-color: rgb(217, 223, 215);
 
+	/*NAVEGADOR*/
+	.nav__navbar {
+		background-color: black;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+		min-height: 100px;
+		.navbar__imagenLogo {
+			width: 125px;
+			height: 100px;
 		}
-		.navbar__navbar-nav{
+		.navbar__navbar-nav {
 			font-size: 20px;
 			font-family: $font-primario;
-			.nav-item .nav-link{
+			.nav-item .nav-link {
 				color: rgb(217, 223, 215);
 				margin-left: 12px;
 			}
+			.nav-link:hover {
+				color: rgb(173, 169, 169);
+			}
 		}
-		.navbar__navbar-toggler{
+		.navbar__navbar-toggler {
 			color: $color-primario;
 			font-size: 35px;
 		}
-		
 	}
 
 	/*CAROUSEL*/
-	.carousel__div{
-
-		.carousel__div__item{
-			.fotoCarousel__img{
-				height: 750px;
+	.carousel__div {
+		.carousel__div__item {
+			margin-top: 115px;
+			.fotoCarousel__img {
+				height: 650px;
 				background: no-repeat center center scroll;
-				-webkit-background-size: cover ;
-				background-size: cover;
-				}	
-			.carousel__div__caption{
+			}
+			.carousel__div__caption {
 				bottom: 250px;
-				.carousel__h5__caption{
+				.carousel__h5__caption {
 					font-size: 100px;
 					text-transform: uppercase;
 					letter-spacing: 4px;
-					margin-top: 40px;
-					font-family: 'Amatic SC', cursive;
+					margin-top: 90000px !important;
+					font-family: "Amatic SC", cursive;
 				}
-				.carousel__p__caption{
+				.carousel__p__caption1 {
 					width: 60%;
 					margin: auto;
-					margin-bottom: 35px;
-					color: rgb(197, 187, 189);
-					font-family: $font-secundario;
-					font-size: 35px;
-					-webkit-text-stroke: 0.5px black;
+					padding: 40px;
+					color: rgb(162, 204, 209);
+					font-family: "Amatic SC", cursive;
+					font-size: 65px;
 				}
-				.carousel__a__caption{
+
+				.carousel__p__caption2 {
+					width: 60%;
+					margin: auto;
+					padding: 40px;
+					color: rgb(235, 155, 195);
+					font-family: "Amatic SC", cursive;
+					font-size: 65px;
+				}
+				.carousel__a__caption {
 					text-transform: uppercase;
 					background: #262626;
 					padding: 10px 30px;
@@ -67,13 +72,23 @@ body{
 					color: #fff;
 					margin-top: 15px;
 					font-family: $font-primario;
+					border-color: #fcffff !important;
+					border-style: solid !important;
 				}
-				.div__iconos__corousel{
+
+				.carousel__a__caption:hover {
+					background-color: white;
+					color: black;
+					border-color: black !important;
+					border-style: solid !important;
+					font-style: none !important;
+				}
+				.div__iconos__corousel {
 					margin-top: 50px;
-					.a__icono__carousel{
-						.icono__carousel{
-								padding: 0px 80px 0px 80px;
-								font-size: 75px;
+					.a__icono__carousel {
+						.icono__carousel {
+							padding: 0px 80px 0px 80px;
+							font-size: 75px;
 						}
 					}
 				}
@@ -81,69 +96,117 @@ body{
 		}
 	}
 	/*ETIQUETA NUEVOS PRODUCTOS*/
-	.etiqueta__container{
-
+	.etiqueta__container {
 		padding: 20px;
-
-		.h2__container__nuestroCatalogo{
-			font-family: $font-secundario;
-		    margin-top: 150px;
-		}
-		.h2__container__productosDestacados{
+		margin-top: -40px;
+		margin-bottom: 20px;
+		.h2__container__productosDestacados {
 			font-family: $font-secundario;
 		}
 	}
-	
+
 	/*GALERIA*/
 
-	.section__galeria{
-		background: linear-gradient(100deg,rgb(184, 5, 94) 50%,rgb(131, 127, 127) 50%);
-		margin-top: -10px;
+	.section__galeria {
+		background: linear-gradient(100deg, rgb(235, 155, 195) 50%, rgb(162, 204, 209) 50%);
+		box-shadow: 0px 0px 10px 3px rgb(153, 151, 151);
+		margin-top: 60px;
+		margin-left: 60px;
+		margin-right: 60px;
 		text-align: center;
+		border-radius: 1%;
 		padding: 50px 0;
-	.row{
-		
-		.galeria__div{
-			
-			.portfolio-container img{
-				-webkit-filter: sepia(100%);
-				filter: sepia(100%);
-				-webkit-transition: .3s ease-in-out;
-				transition: .3s ease-in-out;
-				height: 350px;
-				width: 300px;
-				margin-bottom: 40px;
-			}
+		.row {
+			.galeria__div {
+				.portfolio-container img {
+					-webkit-filter: sepia(100%);
+					filter: sepia(100%);
+					-webkit-transition: 0.3s ease-in-out;
+					transition: 0.3s ease-in-out;
+					height: 350px;
+					width: 300px;
+					margin-bottom: 40px;
 
-			.portfolio-container:hover img{
-				-webkit-filter: sepia(0);
-				filter: sepia(0);
-			}
-			.div__portfolio-details{
-				margin-top: -30px;
-				margin-bottom: 40px;
-				.galeria__h3{
-					font-size: 15px;
-					padding-top: 5px;
+					border: 2px solid rgb(211, 208, 208);
+				}
+
+				.portfolio-container:hover img {
+					-webkit-filter: sepia(0);
+					filter: sepia(0);
+				}
+				.div__portfolio-details {
+					margin-top: -30px;
+					margin-bottom: 40px;
+					.galeria__h3 {
+						font-size: 15px;
+						padding-top: 5px;
+					}
 				}
 			}
 		}
 	}
 
-}
-
 	/*BOTON*/
-	.botonFinal__btn{
+	.botonFinal__btn {
 		margin-top: -90px;
 		margin-bottom: 40px;
 		margin-left: 43%;
 	}
+
+	/*TESTIMONIOS*/
+	.container__testimonios {
+		background-color: rgb(28, 29, 27);
+		margin-bottom: 70px;
+		margin-top: 40px;
+		border-radius: 1.5%;
+		box-shadow: 0px 0px 10px 3px rgb(10, 10, 10);
+		.single-box__testimonios {
+			position: relative;
+			margin-bottom: 30px;
+			margin-top: 40px;
+			.img-area__testimonios {
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				border: 5px solid #fff;
+				overflow: hidden;
+				top: 15px;
+				left: 125px;
+				border-radius: 50%;
+				.img-area-img__testimonios {
+					width: 100%;
+				}
+			}
+			.img-text__testimonios {
+				width: 100%;
+				height: 300px;
+				display: block;
+				text-align: center;
+				padding: 40% 5%;
+				background: #262626;
+				color: #fff;
+				border-radius: 15px;
+				.img-txt-h2__testimonios {
+					font-size: 25px;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+				}
+				.img-txt-p__testimonios {
+					font-size: 14px;
+				}
+			}
+		}
+		.carousel-indicators__testimonios {
+			bottom: -15px;
+		}
+	}
+
 	/*FOOTER*/
 
-	.container__footer{
+	.container__footer {
 		color: $color-primario;
-		.columna2__div{
-			.listaProductos__ul{
+		.columna2__div {
+			.listaProductos__ul {
 				height: 100px;
 				width: 50px;
 				display: flex;
@@ -151,16 +214,16 @@ body{
 				flex-wrap: wrap;
 				list-style: none;
 				margin-left: -52px;
-				.producto__li{
+				.producto__li {
 					padding-bottom: 1px;
 					padding-right: 5px;
 					margin: 10px;
 				}
 			}
 		}
-		.columna3__div{
-			.informacion__ul{
-				.informacion__li{
+		.columna3__div {
+			.informacion__ul {
+				.informacion__li {
 					padding-bottom: 5px;
 					padding-left: 7px;
 				}
@@ -170,12 +233,13 @@ body{
 
 	/*SECCION NOSOTROS*/
 
-	#hero{
+	#hero {
+		background: url(../img/mandalas.jpg);
 		text-align: center;
 		padding: 50px 0;
 		margin-top: 40px;
 		margin-bottom: -40px;
-		.container__seccionNosotros{
+		.container__seccionNosotros {
 			border-style: inherit;
 			margin-top: 50px;
 			margin-bottom: 50px;
@@ -184,116 +248,148 @@ body{
 			background-repeat: no-repeat;
 			background-size: cover;
 			border-radius: 1%;
-			
-			.h1__seccionNosotros{
+
+			.h1__seccionNosotros {
 				font-family: $font-secundario;
 				margin-top: 80px;
 				margin-bottom: 80px;
 				padding-top: 40px;
-				
 			}
-			.p__seccionNosotros{
+			.p__seccionNosotros {
 				font-family: $font-primario;
 				font-weight: 900;
 				color: rgb(0, 0, 0);
 				font-size: 35px;
 				margin-bottom: 80px;
 			}
-			
-		
 		}
-
 	}
-	
+
 	/*SECCION CONTACTO*/
+	.container__contacto {
+		.content {
+			margin: 6%;
+			padding: 4rem 1rem 4rem 1rem;
+			box-shadow: 0px 0px 10px 3px grey;
+			background: #ffffff;
+			margin-top: 18%;
+			font-family: $font-primario;
+			font-size: 20px;
 
-	.content{
-		margin: 6%;
-		padding: 4rem 1rem 4rem 1rem;
-		box-shadow: 0px 0px 10px 3px grey;
-		background: #ffffff;
-		margin-top: 18% ;
-		font-family: $font-primario;
-		font-size: 20px;
-		
-
-		.div__img__form{
-			padding-right: 20px;
-			padding-top: 60px;
-			.img-fluid{
-				height: 250px;
+			.div__img__form {
+				padding-right: 20px;
+				padding-top: 60px;
+				.img-fluid {
+					height: 250px;
+				}
 			}
-		
-		}
 
-		.div__form{
-			border-style: solid;
-			border-color: green;
-		.h2__container__contacto{
+			.div__form {
+				border-style: solid;
+				border-color: green;
+				.h2__container__contacto {
+					font-family: $font-secundario;
+					margin-left: 28%;
+					padding-bottom: 50px;
+					margin-top: 20px;
+				}
+
+				.form-control {
+					display: block;
+					width: 100%;
+					font-size: 1rem;
+					font-weight: 400;
+					line-height: 1.5;
+					border-color: #00ac96 !important;
+					border-style: solid !important;
+					border-width: 0 0 1px 0 !important;
+					padding: 0px !important;
+					color: #495057;
+					height: auto;
+					border-radius: 0;
+					background-color: #fff;
+					background-clip: padding-box;
+				}
+
+				.form-control:focus {
+					color: #495057;
+					background-color: white;
+					border-color: white;
+					outline: 0;
+					box-shadow: none;
+				}
+
+				.btn__formulario {
+					margin-top: 20px;
+					margin-bottom: 20px;
+					margin-left: 140px;
+					border-color: #00ac96;
+					color: #00ac96;
+					background-color: white;
+				}
+
+				.btn__formulario:hover {
+					background-color: #00ac96;
+					color: white;
+				}
+			}
+		}
+	}
+
+	/*SECCION PRODUCTOS*/
+	.etiqueta__container__2 {
+		margin-top: 125px;
+		.h2__container__nuestroCatalogo {
 			font-family: $font-secundario;
-			margin-left: 28%;
-			padding-bottom: 50px;
-			margin-top: 20px;
+			padding: 40px;
 		}
 
-		.form-control{
-			display: block;
-			width: 100%;
-			font-size: 1rem;
-			font-weight: 400;
-			line-height: 1.5;
-			border-color: #00ac96 !important;
-			border-style: solid !important;
-			border-width: 0 0 1px 0 !important;
-			padding: 0px !important;
-			color: #495057;
-			height: auto;
-			border-radius: 0;
-			background-color: #fff;
-			background-clip: padding-box ;
-		}
-
-		.form-control:focus{
-			color: #495057;
-			background-color: white;
-			border-color: white;
-			outline: 0;
-			box-shadow: none;
-		}
-
-		.btn__formulario{
-			margin-top: 20px;
-			margin-bottom: 20px;
-			margin-left: 140px;
-			border-color: #00ac96;
-			color: #00ac96;
-			background-color: white;
-		}
-
-		.btn__formulario:hover{
-			background-color: #00ac96;
-			color:white;
+		.card {
+			border-style: solid;
+			border-color: black;
 		}
 	}
+
+	/*SECCION ENVIOS*/
+
+	.card-img-filter{
+		filter: brightness(0.5);
 	}
+	.card{
+		transition-duration: 0.6s;
+		clip-path: polygon(50% 0, 100% 0, 100% 50%,100% 100%,50% 100%,0 100%,0 50%,0 0);
+	}
+	.card-effect:hover .card{
+		clip-path: polygon(50% 0, 50% 0, 100% 50%,100% 50%,50% 100%,50% 100%,0 50%,0 50%);
+
+	}
+	.card-img-overlay{
+		transition-duration: 0.6s;
+	}
+	.card-effect:hover .card-img-overlay{
+		transform:scale(0.9);
+	}
+	.h4__envios{
+		font-size: 50px;
+		padding: 20px;
+		font-family: $font-primario;
+		letter-spacing: 4px;
+
+	}
+
+	.container__envios{
+		padding: 80px;
+		margin-bottom: 60px;
+		border-radius: 5px;
+		border-style: solid;
+		background:  url(../img/mandalas.jpg);
+		background-color: rgb(84, 94, 94);
 		
-		
-}
+	}
 
-
-
-
+	.p__envios{
+		font-size: 20px;
+		font-family: $font-primario;
+	}
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
