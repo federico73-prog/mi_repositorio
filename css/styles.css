@@ -1,5 +1,7 @@
 body {
   background-color: #d9dfd7;
+  margin: 0;
+  padding: 0;
   /*NAVEGADOR*/
   /*CAROUSEL*/
   /*ETIQUETA NUEVOS PRODUCTOS*/
@@ -13,8 +15,7 @@ body {
   /*SECCION ENVIOS*/ }
   body .nav__navbar {
     background-color: black;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
-    min-height: 100px; }
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05); }
     body .nav__navbar .navbar__imagenLogo {
       width: 125px;
       height: 100px; }
@@ -35,15 +36,14 @@ body {
       height: 650px;
       background: no-repeat center center scroll; }
     body .carousel__div .carousel__div__item .carousel__div__caption {
-      bottom: 250px; }
+      bottom: 250px;
+      margin-top: 150px !important; }
       body .carousel__div .carousel__div__item .carousel__div__caption .carousel__h5__caption {
         font-size: 100px;
         text-transform: uppercase;
         letter-spacing: 4px;
-        margin-top: 90000px !important;
         font-family: "Amatic SC", cursive; }
       body .carousel__div .carousel__div__item .carousel__div__caption .carousel__p__caption1 {
-        width: 60%;
         margin: auto;
         padding: 40px;
         color: #a2ccd1;
@@ -87,18 +87,15 @@ body {
     background: linear-gradient(100deg, #eb9bc3 50%, #a2ccd1 50%);
     box-shadow: 0px 0px 10px 3px #999797;
     margin-top: 60px;
-    margin-left: 60px;
-    margin-right: 60px;
     text-align: center;
-    border-radius: 1%;
     padding: 50px 0; }
     body .section__galeria .row .galeria__div .portfolio-container img {
       -webkit-filter: sepia(100%);
       filter: sepia(100%);
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out;
-      height: 350px;
-      width: 300px;
+      height: 250px;
+      width: 200px;
       margin-bottom: 40px;
       border: 2px solid #d3d0d0; }
     body .section__galeria .row .galeria__div .portfolio-container:hover img {
@@ -110,10 +107,8 @@ body {
       body .section__galeria .row .galeria__div .div__portfolio-details .galeria__h3 {
         font-size: 15px;
         padding-top: 5px; }
-  body .botonFinal__btn {
-    margin-top: -90px;
-    margin-bottom: 40px;
-    margin-left: 43%; }
+    body .section__galeria .div__boton__final .botonFinal__btn {
+      font-family: "Josefin Sans", sans-serif; }
   body .container__testimonios {
     background-color: #1c1d1b;
     margin-bottom: 70px;
@@ -213,7 +208,6 @@ body {
       border-color: green; }
       body .container__contacto .content .div__form .h2__container__contacto {
         font-family: "Major Mono Display", monospace;
-        margin-left: 28%;
         padding-bottom: 50px;
         margin-top: 20px; }
       body .container__contacto .content .div__form .form-control {
@@ -240,7 +234,6 @@ body {
       body .container__contacto .content .div__form .btn__formulario {
         margin-top: 20px;
         margin-bottom: 20px;
-        margin-left: 140px;
         border-color: #00ac96;
         color: #00ac96;
         background-color: white; }
@@ -297,3 +290,70 @@ body {
     border-color: black !important;
     border-style: solid !important;
     font-style: none !important; }
+  @media screen and (max-width: 700px) {
+    body .h2__container__productosDestacados {
+      font-size: 25px; }
+    body .h2__container__nuestroCatalogo {
+      font-size: 25px; }
+    body .carousel__h5__caption {
+      font-size: 50px !important;
+      padding-top: 80px !important; }
+    body .carousel__p__caption1, body .carousel__p__caption2 {
+      font-size: 28px !important; }
+    body .carousel__a__caption {
+      font-size: 10px; }
+    body .div__iconos__corousel {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      body .div__iconos__corousel .icono__carousel {
+        font-size: 30px !important;
+        padding: 0px 20px 0px 20px !important; }
+    body .row__galeria {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      body .row__galeria .portfolio-container img {
+        height: 150px !important;
+        width: 125px !important; }
+    body .container__testimonios {
+      display: none !important; }
+    body .h4__envios {
+      font-size: 15px;
+      padding-bottom: 1px; }
+    body .p__envios {
+      font-size: 5px;
+      padding-bottom: 1px; }
+    body .carousel__a__envios {
+      font-size: 5px  !important;
+      margin-top: -1px; }
+    body .galeria__h3 {
+      font-size: 9px  !important;
+      padding-top: 1px !important; } }
+  @media screen and (max-width: 1200px) and (min-width: 700px) {
+    body .h2__container__productosDestacados {
+      font-size: 55px; }
+    body .h2__container__nuestroCatalogo {
+      font-size: 55px; }
+    body .carousel__h5__caption {
+      font-size: 65px !important;
+      padding-top: 80px !important; }
+    body .carousel__p__caption1, body .carousel__p__caption2 {
+      font-size: 33px !important; }
+    body .carousel__a__caption {
+      font-size: 15px; }
+    body .div__iconos__corousel {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      body .div__iconos__corousel .icono__carousel {
+        font-size: 40px !important;
+        padding: 0px 20px 0px 20px !important; }
+    body .container__testimonios {
+      display: none !important; }
+    body .h4__envios {
+      font-size: 40px; }
+    body .p__envios {
+      font-size: 15px; }
+    body .carousel__a__envios {
+      font-size: 15px  !important; } }

@@ -3,12 +3,14 @@
 
 body {
 	background-color: rgb(217, 223, 215);
+	margin: 0;
+	padding: 0;
+	
 
 	/*NAVEGADOR*/
 	.nav__navbar {
 		background-color: black;
 		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
-		min-height: 100px;
 		.navbar__imagenLogo {
 			width: 125px;
 			height: 100px;
@@ -40,15 +42,16 @@ body {
 			}
 			.carousel__div__caption {
 				bottom: 250px;
+				margin-top: 150px !important;
+			
 				.carousel__h5__caption {
 					font-size: 100px;
 					text-transform: uppercase;
 					letter-spacing: 4px;
-					margin-top: 90000px !important;
+					
 					font-family: "Amatic SC", cursive;
 				}
 				.carousel__p__caption1 {
-					width: 60%;
 					margin: auto;
 					padding: 40px;
 					color: rgb(162, 204, 209);
@@ -100,6 +103,8 @@ body {
 		padding: 20px;
 		margin-top: -40px;
 		margin-bottom: 20px;
+		
+		
 		.h2__container__productosDestacados {
 			font-family: $font-secundario;
 		}
@@ -111,10 +116,7 @@ body {
 		background: linear-gradient(100deg, rgb(235, 155, 195) 50%, rgb(162, 204, 209) 50%);
 		box-shadow: 0px 0px 10px 3px rgb(153, 151, 151);
 		margin-top: 60px;
-		margin-left: 60px;
-		margin-right: 60px;
 		text-align: center;
-		border-radius: 1%;
 		padding: 50px 0;
 		.row {
 			.galeria__div {
@@ -123,8 +125,8 @@ body {
 					filter: sepia(100%);
 					-webkit-transition: 0.3s ease-in-out;
 					transition: 0.3s ease-in-out;
-					height: 350px;
-					width: 300px;
+					height: 250px;
+					width: 	200px;
 					margin-bottom: 40px;
 
 					border: 2px solid rgb(211, 208, 208);
@@ -143,15 +145,20 @@ body {
 					}
 				}
 			}
+			
+		}
+		.div__boton__final{
+			.botonFinal__btn{
+				
+				font-family: $font-primario;
+				
+			}
+
 		}
 	}
 
 	/*BOTON*/
-	.botonFinal__btn {
-		margin-top: -90px;
-		margin-bottom: 40px;
-		margin-left: 43%;
-	}
+	
 
 	/*TESTIMONIOS*/
 	.container__testimonios {
@@ -289,7 +296,6 @@ body {
 				border-color: green;
 				.h2__container__contacto {
 					font-family: $font-secundario;
-					margin-left: 28%;
 					padding-bottom: 50px;
 					margin-top: 20px;
 				}
@@ -322,7 +328,6 @@ body {
 				.btn__formulario {
 					margin-top: 20px;
 					margin-bottom: 20px;
-					margin-left: 140px;
 					border-color: #00ac96;
 					color: #00ac96;
 					background-color: white;
@@ -413,6 +418,130 @@ body {
 	}
 	
 
+	@media screen and (max-width: 700px) {
+		.h2__container__productosDestacados {
+			font-size: 25px;
+		}
+
+		.h2__container__nuestroCatalogo {
+			font-size: 25px;
+		}
+
+		.carousel__h5__caption {
+			font-size: 50px !important;
+			padding-top: 80px !important;
+		}
+
+		.carousel__p__caption1, .carousel__p__caption2 {
+			font-size: 28px !important;
+		}
+
+		.carousel__a__caption{
+			font-size: 10px;
+		}
+		.div__iconos__corousel {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			.icono__carousel{
+				font-size: 30px !important;
+				padding: 0px 20px 0px 20px !important;
+			}
+		}
+		
+		.row__galeria{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			.portfolio-container img{
+				height: 150px !important;
+				width: 125px !important;
+			}
+		}
+
+		.container__testimonios{
+			display: none !important;
+		}
+
+		.h4__envios{
+			font-size: 15px;
+			padding-bottom: 1px;
+		}
+
+		.p__envios{
+			font-size: 5px;
+			padding-bottom: 1px;
+		}
+
+		.carousel__a__envios{
+			font-size: 5px  !important;
+			margin-top: -1px;
+		}
+
+		.galeria__h3{
+			font-size: 9px  !important;
+			padding-top: 1px !important;
+		}
+
+			
+	}
+
+	@media screen and (max-width: 1200px) and (min-width: 700px) {
+
+
+		.h2__container__productosDestacados {
+			font-size: 55px;
+		}
+
+		.h2__container__nuestroCatalogo {
+			font-size: 55px;
+		}
+
+		.carousel__h5__caption {
+			font-size: 65px !important;
+			padding-top: 80px !important;
+		}
+
+		.carousel__p__caption1, .carousel__p__caption2 {
+			font-size: 33px !important;
+		}
+
+		.carousel__a__caption{
+			font-size: 15px;
+		}
+		.div__iconos__corousel {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			.icono__carousel{
+				font-size: 40px !important;
+				padding: 0px 20px 0px 20px !important;
+			}
+		}
+
+		.container__testimonios{
+			display: none !important;
+		}
+
+		.h4__envios{
+			font-size: 40px;
+		}
+
+		.p__envios{
+			font-size: 15px;
+		}
+
+		.carousel__a__envios{
+			font-size: 15px  !important;
+		}
+			
+			
+	}
+
+	
+	
+
+	
 	
 	
 }
