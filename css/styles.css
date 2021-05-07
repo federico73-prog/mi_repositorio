@@ -6,7 +6,6 @@ body {
   /*CAROUSEL*/
   /*ETIQUETA NUEVOS PRODUCTOS*/
   /*GALERIA*/
-  /*BOTON*/
   /*TESTIMONIOS*/
   /*FOOTER*/
   /*SECCION NOSOTROS*/
@@ -26,7 +25,7 @@ body {
         color: #d9dfd7;
         margin-left: 12px; }
       body .nav__navbar .navbar__navbar-nav .nav-link:hover {
-        color: #ada9a9; }
+        color: #989b97; }
     body .nav__navbar .navbar__navbar-toggler {
       color: white;
       font-size: 35px; }
@@ -84,9 +83,7 @@ body {
     body .etiqueta__container .h2__container__productosDestacados {
       font-family: "Major Mono Display", monospace; }
   body .section__galeria {
-    background: linear-gradient(100deg, #eb9bc3 50%, #a2ccd1 50%);
-    box-shadow: 0px 0px 10px 3px #999797;
-    margin-top: 60px;
+    margin-top: 5px;
     text-align: center;
     padding: 50px 0; }
     body .section__galeria .row .galeria__div .portfolio-container img {
@@ -106,7 +103,12 @@ body {
       margin-bottom: 40px; }
       body .section__galeria .row .galeria__div .div__portfolio-details .galeria__h3 {
         font-size: 15px;
-        padding-top: 5px; }
+        padding-top: 5px;
+        font-family: 'Roboto Mono', monospace; }
+      body .section__galeria .row .galeria__div .div__portfolio-details .galeria__h4 {
+        font-size: 13px;
+        padding-top: 5px;
+        font-family: 'Roboto Mono', monospace; }
     body .section__galeria .div__boton__final .botonFinal__btn {
       font-family: "Josefin Sans", sans-serif; }
   body .container__testimonios {
@@ -194,7 +196,7 @@ body {
     margin: 6%;
     padding: 4rem 1rem 4rem 1rem;
     box-shadow: 0px 0px 10px 3px grey;
-    background: #ffffff;
+    background: #fdfcfb;
     margin-top: 18%;
     font-family: "Josefin Sans", sans-serif;
     font-size: 20px; }
@@ -240,11 +242,14 @@ body {
       body .container__contacto .content .div__form .btn__formulario:hover {
         background-color: #00ac96;
         color: white; }
+  body .etiqueta__detallecompra {
+    font-family: "Major Mono Display", monospace;
+    padding: 20px; }
   body .etiqueta__container__2 {
     margin-top: 125px; }
     body .etiqueta__container__2 .h2__container__nuestroCatalogo {
       font-family: "Major Mono Display", monospace;
-      padding: 40px; }
+      padding: 20px; }
     body .etiqueta__container__2 .card {
       border-style: solid;
       border-color: black; }
@@ -357,3 +362,91 @@ body {
       font-size: 15px; }
     body .carousel__a__envios {
       font-size: 15px  !important; } }
+  body .prodCarrito .prodCarrito__h2 {
+    font-family: "Major Mono Display", monospace; }
+  body .tabla__modal {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border: solid 5px #0F362D;
+    font-size: 14px; }
+    body .tabla__modal th, body .tabla__modal td {
+      padding: 0;
+      border: solid 1px #0F362D; }
+    body .tabla__modal thead {
+      background-color: #246355;
+      color: white;
+      border-bottom: solid 5px #0F362D; }
+    body .tabla__modal tr:nth-child(even) {
+      background-color: #ddd; }
+  body .tabla__compra {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border: solid 0.5px #0F362D;
+    font-size: 14px; }
+    body .tabla__compra th, body .tabla__compra td {
+      padding: 20px; }
+    body .tabla__compra thead {
+      background-color: #246355;
+      color: white;
+      border-bottom: solid 5px #0F362D; }
+    body .tabla__compra tr:nth-child(even) {
+      background-color: #ddd; }
+    body .tabla__compra tr:hover td {
+      background-color: #369681;
+      color: white; }
+  body .h3__total {
+    font-size: 18px;
+    padding-left: 20px;
+    margin: 5px; }
+  body .h3__total_compra {
+    font-size: 25px;
+    padding-top: 30px;
+    margin: 5px;
+    font-family: 'Roboto Mono', monospace; }
+  body .carrito__h6 {
+    font-size: 15px;
+    padding-top: 5px;
+    font-family: 'Roboto Mono', monospace; }
+  body .carrito__h5 {
+    font-size: 18px;
+    padding-top: 5px;
+    font-family: 'Roboto Mono', monospace; }
+  body .etiqueta__carrito {
+    font-family: "Major Mono Display", monospace;
+    padding: 15px; }
+  body .shoppingCartItemQuantity {
+    width: 55px;
+    text-align: left; }
+  body .buttonDelete {
+    margin-right: 90px; }
+  body .botonCompraFinal {
+    height: 40px; }
+  body .botonConfirmarCompra {
+    height: 40px; }
+  body .dolarButton {
+    height: 40px;
+    width: 120px; }
+  body .elemento__compra {
+    margin-top: 20px; }
+  body .carrito__h5__compra {
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace; }
+  body .carrito__h6__compra {
+    font-size: 24px;
+    font-family: 'Roboto Mono', monospace; }
+  body .botonCompraFinal {
+    margin-right: 20px; }
+  body .carrito__total__row {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  body .icono__carrito__div {
+    position: absolute;
+    left: 82%;
+    top: 18%; }
+    body .icono__carrito__div .icono__carrito {
+      color: #750e0e;
+      font-size: 75px; }

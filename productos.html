@@ -40,8 +40,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@700&family=Orbitron:wght@900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@700&family=Major+Mono+Display&family=Orbitron:wght@900&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 <body>
+    
     <nav class="navbar navbar-expand-lg fixed-top nav__navbar">
         <div class="container">
 
@@ -62,13 +64,12 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Productos</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Camisas</a>
-                            <a class="dropdown-item" href="#">Remeras</a>
-                            <a class="dropdown-item" href="#">Camperas</a>
-                            <a class="dropdown-item" href="#">Jeans</a>
-                            <a class="dropdown-item" href="#">Buzos</a>
+                            <a class="dropdown-item btn_Polleras" href="#">Polleras</a>
+                            <a class="dropdown-item btn_Shorts" href="#">Shorts</a>
+                            <a class="dropdown-item btn_Buzos" href="#">Buzos</a>
+                            <a class="dropdown-item btn_Remeras" href="#">Remeras</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="productos.html">Todos los productos</a>
+                            <a class="dropdown-item btn_All">Todos los productos</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -84,111 +85,114 @@
    
 
     
-        <div class="content-center  etiqueta__container__2">
+        <div class=" content-center  etiqueta__container__2">
                 <h2 class="h2__container__nuestroCatalogo text-center display-4 my-4"> Nuestro Catalogo</h2>
+                <div class="icono__carrito__div">
+                    <a href="#id_etiqueta__carrito"><ion-icon name="cart-outline" class="icono__carrito"></ion-icon></a>
+                </div>      
         </div>
-<div class="container">
-        <div class="row row-cols-1 row-cols-md-3">
-            <div class="col mb-4">
-              <div class="card h-100">
-                <a href="" data-toggle="modal" data-target="#exampleModal1">
-                <img src="img/foto8.jpg" class="card-img-top" alt="...">
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col mb-4">
-              <div class="card h-100">
-                <a href="" data-toggle="modal" data-target="#exampleModal2">
-                    <img src="img/foto2.jpg" class="card-img-top" alt="...">
-                    </a>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a short card.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-4">
-              <div class="card h-100">
-                <a href="" data-toggle="modal" data-target="#exampleModal3">
-                    <img src="img/foto7.jpg" class="card-img-top" alt="...">
-                    </a>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-4">
-              <div class="card h-100">
-                <a href="" data-toggle="modal" data-target="#exampleModal4">
-                    <img src="img/foto11.jpg" class="card-img-top" alt="...">
-                    </a>
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card h-100">
-                    <a href="" data-toggle="modal" data-target="#exampleModal5">
-                        <img src="img/foto4.jpg" class="card-img-top" alt="...">
-                        </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-4">
-                <div class="card h-100">
-                    <a href="" data-toggle="modal" data-target="#exampleModal6">
-                        <img src="img/foto5.jpg" class="card-img-top" alt="...">
-                        </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog  modal-dialog-centered" role="document">
-            <img src="img/foto8.jpg" class="card-img-top img-fluid rounded" alt="...">
-            </div>
-        </div>  
-        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog  modal-dialog-centered" role="document">
-            <img src="img/foto2.jpg" class="card-img-top img-fluid rounded" alt="...">
-            </div>
-        </div>     
+
         
-        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog  modal-dialog-centered" role="document">
-            <img src="img/foto7.jpg" class="card-img-top img-fluid rounded" alt="...">
+
+        <section id="portfolio" class="section__galeria">
+            <div class="container-fluid cf__galeria">
+                <div class="row row__galeria">
+
+                </div>
             </div>
-        </div>       
-        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog  modal-dialog-centered" role="document">
-            <img src="img/foto11.jpg" class="card-img-top img-fluid rounded" alt="...">
+        </section>
+
+
+
+        <section class="shopping-cart">
+            <div class="container">
+                <h1 id="id_etiqueta__carrito"class="text-center etiqueta__carrito">CARRITO</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="shopping-cart-header">
+                            <h5 class = "carrito__h5"><b>Producto</b></h5>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="shopping-cart-header">
+                            <h5 class="text-truncate carrito__h5"><b>Precio</b></h5>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="shopping-cart-header">
+                            <h5 class = "carrito__h5"><b>Cantidad</b></h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- ? START SHOPPING CART ITEMS -->
+                <div class="shopping-cart-items shoppingCartItemsContainer">
+                    <!-- MOCKUP EXAMPLE (DELETE) -->
+                    <!-- END MOCKUP EXAMPLE -->
+                </div>
+                <!-- ? END SHOPPING CART ITEMS -->
+    
+                <!-- START TOTAL -->
+                <div class="row carrito__total__row">
+                    <div class="col-12">
+                        <div class="shopping-cart-total d-flex align-items-center">
+                            <p class="mb-0 carrito__h5">Total: </p>
+                            <p class="ml-4 mb-0 shoppingCartTotal carrito__h5">$ 0,00 </p>
+                            &emsp;&emsp;
+                            <p class="mb-0 carrito__h5">Total Dolar: </p>
+                            <p class="ml-4 mb-0 shoppingCartTotalDolar carrito__h5"> U$S 0,00 </p>
+                            <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                                data-delay="2000">
+                                <div class="toast-header">
+                                    <span>✅</span>
+                                    <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="btn btn-success ml-auto dolarButton" type="button" 
+                                >Valor dolar</button>
+                            <button class="btn btn-success ml-auto botonCompraFinal" type="button" data-toggle="modal"
+                                data-target="#comprarModal">Comprar</button>
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- END TOTAL -->
+    
+                <!-- START MODAL CONFIRMA COMPRA -->
+                <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="comprarModalLabel">Detalle de su carrito: </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body modal-body_js">
+
+                            </div>
+                            <h3 class="h3__total"></h3>
+                            <div class="modal-footer">
+                                
+                                <button  data-toggle="modal" type="button" class="btn btn-success botonProcesarCompra" data-dismiss="modal">Procesar compra</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END MODAL CONFIRMA COMPRA -->
+                <!-- START MODAL FINAL -->
+                
+    
+    
             </div>
-        </div>       
-        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog  modal-dialog-centered" role="document">
-            <img src="img/foto4.jpg" class="card-img-top img-fluid rounded" alt="...">
-            </div>
-        </div>       
-        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog  modal-dialog-centered" role="document">
-            <img src="img/foto5.jpg" class="card-img-top img-fluid rounded" alt="...">
-            </div>
-        </div>       
-    </div>  
+    
+        </section>
        
     <footer class ="page-footer bg-dark container__footer">
         <div class="bg-success">
@@ -240,10 +244,12 @@
         <p>Todos los derechos reservados</p>
     </div>
     </footer>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/js-main.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 
 </html>

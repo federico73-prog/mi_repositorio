@@ -23,7 +23,7 @@ body {
 				margin-left: 12px;
 			}
 			.nav-link:hover {
-				color: rgb(173, 169, 169);
+				color: rgb(152, 155, 151);
 			}
 		}
 		.navbar__navbar-toggler {
@@ -113,13 +113,14 @@ body {
 	/*GALERIA*/
 
 	.section__galeria {
-		background: linear-gradient(100deg, rgb(235, 155, 195) 50%, rgb(162, 204, 209) 50%);
-		box-shadow: 0px 0px 10px 3px rgb(153, 151, 151);
-		margin-top: 60px;
+		
+		margin-top: 5px;
 		text-align: center;
 		padding: 50px 0;
 		.row {
+			
 			.galeria__div {
+	
 				.portfolio-container img {
 					-webkit-filter: sepia(100%);
 					filter: sepia(100%);
@@ -128,6 +129,7 @@ body {
 					height: 250px;
 					width: 	200px;
 					margin-bottom: 40px;
+					
 
 					border: 2px solid rgb(211, 208, 208);
 				}
@@ -142,6 +144,13 @@ body {
 					.galeria__h3 {
 						font-size: 15px;
 						padding-top: 5px;
+						font-family: 'Roboto Mono', monospace;;
+					}
+					.galeria__h4{
+						font-size: 13px;
+						padding-top: 5px;
+						font-family: 'Roboto Mono', monospace;;
+
 					}
 				}
 			}
@@ -156,9 +165,6 @@ body {
 
 		}
 	}
-
-	/*BOTON*/
-	
 
 	/*TESTIMONIOS*/
 	.container__testimonios {
@@ -278,7 +284,7 @@ body {
 			margin: 6%;
 			padding: 4rem 1rem 4rem 1rem;
 			box-shadow: 0px 0px 10px 3px grey;
-			background: #ffffff;
+			background: #fdfcfb;
 			margin-top: 18%;
 			font-family: $font-primario;
 			font-size: 20px;
@@ -342,11 +348,15 @@ body {
 	}
 
 	/*SECCION PRODUCTOS*/
+	.etiqueta__detallecompra{
+		font-family: $font-secundario;
+			padding: 20px;
+	}
 	.etiqueta__container__2 {
 		margin-top: 125px;
 		.h2__container__nuestroCatalogo {
 			font-family: $font-secundario;
-			padding: 40px;
+			padding: 20px;
 		}
 
 		.card {
@@ -540,8 +550,136 @@ body {
 
 	
 	
+	.prodCarrito{
+		.prodCarrito__h2{
+			font-family: $font-secundario;
+		}
+	}
 
+	.tabla__modal{
+		background-color: white;
+		width: 100%;
+		text-align: center;
+		border-collapse: collapse;
+		border: solid 5px #0F362D;
+		font-size: 14px;
+		th, td{
+			padding: 0;
+			border: solid 1px #0F362D;
+		}
+		thead{
+			background-color: #246355;
+			color:white;
+			border-bottom: solid 5px #0F362D;
+		}
+		tr:nth-child(even){
+			background-color: #ddd;
+		}
+	}
+
+	.tabla__compra{
+		background-color: white;
+		width: 100%;
+		text-align: center;
+		border-collapse: collapse;
+		border: solid 0.5px #0F362D;
+		font-size: 14px;
+		th, td{
+			padding: 20px;
+		}
+		thead{
+			background-color: #246355;
+			color:white;
+			border-bottom: solid 5px #0F362D;
+		}
+		tr:nth-child(even){
+			background-color: #ddd;
+		}
+		tr:hover td{
+			background-color: #369681;
+			color:white;
+		}
+	}
+
+	.h3__total{
+		font-size: 18px;
+		padding-left: 20px;
+		margin:5px;
+	}
+
+	.h3__total_compra{
+		font-size: 25px;
+		padding-top: 30px;
+		margin:5px;
+		font-family: 'Roboto Mono', monospace;;
+	}
+	.carrito__h6{
+		font-size: 15px;
+		padding-top: 5px;
+		font-family: 'Roboto Mono', monospace;;
+	}
+	.carrito__h5{
+		font-size: 18px;
+		padding-top: 5px;
+		font-family: 'Roboto Mono', monospace;;
+
+	}
+	.etiqueta__carrito{
+		font-family: $font-secundario;
+			padding: 15px;
+	}
+
+	.shoppingCartItemQuantity{
+		width:55px;
+		text-align: left;
+	}
+
+	.buttonDelete{
+		margin-right: 90px;
+	}
+
+	.botonCompraFinal{
+		height: 40px;
+	}
+
+	.botonConfirmarCompra{
+		height: 40px;
+		
+	}
+	.dolarButton{
+		height: 40px;
+		width: 120px;
+	}
+.elemento__compra{
+	margin-top: 20px;
+}
 	
-	
+	.carrito__h5__compra{
+				font-size: 30px;
+				font-family: 'Roboto Mono', monospace;
+	}
+
+	.carrito__h6__compra{
+		font-size: 24px;
+				font-family: 'Roboto Mono', monospace;
+	}
+			.botonCompraFinal{
+				margin-right: 20px;
+			}
+	.carrito__total__row{
+		margin-top:40px;
+		margin-bottom:40px;
+	}
+	.icono__carrito__div{
+		position:absolute;
+		left:82%;
+		top: 18%;
+
+		.icono__carrito{
+			color: rgb(117, 14, 14);
+			font-size: 75px;
+		}
+
+	}
 	
 }
