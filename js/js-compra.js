@@ -41,5 +41,5 @@ function vaciarCarrito(){
 }
 
 function volverPaginaProductos(){
-        window.location.href = "productos.html";
+        window.location.href = "index.html";
 }
