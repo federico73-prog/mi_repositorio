@@ -9,7 +9,7 @@ let URLGET = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
 
 /*Clases Producto e Item, con sus constructores y atributos*/
 class Producto{
-    constructor(idProducto, nombreProducto, precioProducto,categoria,color,img,estado){
+    constructor(idProducto, nombreProducto, precioProducto,categoria,color,img){
         this.idProducto = idProducto;
         this.nombreProducto = nombreProducto;
         this.precioProducto = precioProducto;
@@ -116,7 +116,8 @@ function mostrarGaleria(galeria, categoria){
     }
 }
 
-/*La funcion "cargarGaleriaAux()", se utiliza para no pisar el array galeria original.*/ 
+/*La funcion "cargarGaleriaAux()", se utiliza para crear un nuevo array momentaneo "galeriaAux", 
+para no pisar el array "galeria" original.*/ 
 function cargarGaleriaAux(galeria,galeriaAux,categoria){
     for(producto of galeria){
         if(producto.categoria==categoria){
@@ -227,7 +228,8 @@ function eliminarItemCarrito(item){
     localStorage.setItem( "productos", JSON.stringify(carrito));
 }
 
-/*La funcion actualizarPrecioCarritoDlt() actualiza el procio total del carrito cuando se elimina un producto*/
+/*La funcion actualizarPrecioCarritoDlt() actualiza el procio total del carrito cuando se elimina un producto 
+y actualiza el localstorage*/
 function actualizarPrecioCarritoDlt(item){
     
     totalCarrito = totalCarrito - item.precioItem;
@@ -322,6 +324,8 @@ function mostrarCompra(){
 
 /*EVENTOS BOTONES*/
 
+/*Cuando se presiona el boton "Valor dolar", mediante la api mencionada anteriormente se obtiene la cotizacion del dolar
+y se calcula el valor del total del carrito en esa moneda*/
 $(".dolarButton").click(() => {
     $.get(URLGET, function (precio , estado) {
         if(estado === "success"){
